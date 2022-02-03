@@ -53,7 +53,7 @@ MooredTurbulenceMeasurements/
 Run the main processing script, "NortekHR_processing.m" to process raw aquadopp files in the directory structure (as shown above). If applying to a new data set, the user will have to rename the project folders and the instrument IDs in the directory (as seen above), and in the script "NortekHR_processing.m" (lines 21-38). 
 
 This script is mainly used for data wrangling specific to the SPRUS project. If the user wishes to write their own data wrangling script, they can use the QC and processing functions provided here to follow the same processing method, mainly:
-- Unwrap data using: "histogram_unwrrap_function5.m" (needs chunk2.m)
+- Unwrap data using: "histogram_unwrap_function5.m" (needs chunk2.m)
 - QC unwrapped data: "QC_nortek_velocities.m"
 - Estimate TKE dissipation rate: "wavenumber_dissipation.m"
 
@@ -69,7 +69,7 @@ Make sure data files have been downloaded, including SPURS mooring TS and met fi
 
 Code to generate Figures 2-13, and 15 is available in blocked sections in "PrintFigures2.m". Figure 1 was drafted in Inkscape and not generated from code. Figure 14 was created in python, and is available at a separate repository here: https://github.com/jtomfarrar/SPURS1_SST_map
 
-Spefics requirements for code blocks in "PrintFigures2.m":
+Specific requirements for code blocks in "PrintFigures2.m":
 - Figures 5-7: requires burst level data, which can accessed by running the processing script on the raw data (as described above) or by contacting the author
 - Figure 8-11: requires processed dissipation data (as described above), data from the glider deployments, and SPURS TS data (available on PODAAC, or on UOP website)
 - Figure 12-13: run "BuoyancyCalcs.m" first, which makes local estimates of mixed layer depth and ocean surface buoyancy fluxes.
